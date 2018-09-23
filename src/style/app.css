@@ -1,0 +1,126 @@
+@font-face {
+  font-family: din-condensed;
+  src: url(../fonts/DINCondensedBold.ttf);
+}
+
+@font-face {
+  font-family: gill-sans;
+  src: url(../fonts/GillSans.ttc);
+}
+
+.outerNav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1.5%;
+}
+
+.leftNavItems {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  font-family: din-condensed;
+}
+
+.leftNavItems > div {
+  cursor: pointer;
+}
+
+.leftNavItems > div:nth-child(1) {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.rightNavItems {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  font-family: din-condensed;
+}
+
+.rightNavItems > div {
+  cursor: pointer;
+}
+
+.topSection {
+  background-image: url("../assets/bg-pic.png");
+  width: 100%;
+  height: 750px;
+}
+
+.logoPlacement {
+  padding: 130px 280px;
+}
+
+.topSection > h1:nth-child(2) {
+  text-align: center;
+  color: white;
+  font-family: gill-sans;
+  font-size: 60px;
+  margin: 0;
+  margin-top: -60px !important;
+}
+.topSection > h1:nth-child(3) {
+  text-align: center;
+  color: white;
+  font-family: gill-sans;
+  font-size: 80px !important;
+  margin: 0;
+  margin-top: -20px !important;
+}
+
+.topSection > h4 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.communityBlock > h1 {
+  font-family: din-condensed;
+  margin: 0;
+  font-size: 45px;
+}
+
+.communityBlock > button {
+  background: #ffdac8;
+  border: 0;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-family: din-condensed;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 35px;
+}
+
+.communityFlexWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.communityBlock {
+  width: 18%;
+}
+
+.communityBlock > hr {
+  border: 2px solid #ffdac8;
+  margin-left: -10px;
+  width: 180px;
+  margin-top: -35px;
+}
+
+.communityBlock > p {
+  font-weight: bold;
+}
+
+.communityBlockRight {
+  display: flex;
+}
+
+.cardOne > img:nth-child(1) {
+  height: 250px;
+  width: 200px;
+  border: 2px solid white;
+}
