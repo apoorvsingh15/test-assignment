@@ -15,16 +15,32 @@ export default class CommunitySection extends Component {
               TORNA ENTALTO
             </p>
           </div>
-          <div className="communityBlockRight">
+          <div
+            className={
+              this.props.scrollEvent === 2
+                ? "communityBlockRight animate"
+                : "communityBlockRight"
+            }
+          >
             <div className="cardOne">
-              <img src={require("../assets/bg-pic.png")} alt="foodImage" />
+              <img
+                src={
+                  "https://img.buzzfeed.com/buzzfeed-static/static/2013-12/enhanced/webdr03/7/14/original-grid-image-5007-1386445066-4.jpg?crop=601:601;2,0&downsize=715:*&output-format=auto&output-quality=auto"
+                }
+                alt="foodImage"
+              />
               <img
                 src={require("../assets/instagram-btn.png")}
-                alt="instaImage"
+                alt="instaBtn"
               />
             </div>
-            <div className="cardOne">
-              <img src={require("../assets/bg-pic.png")} alt="foodImage" />
+            <div className="cardTwo">
+              <h3>@buzzfeedfood</h3>
+              <p>
+                It's taco Tuesday! These tacos from @jessezewczyk have no added
+                sugars and are SO good. Find the recipe from the link in out
+                bio! : @taylormillerphoto
+              </p>
             </div>
           </div>
         </div>

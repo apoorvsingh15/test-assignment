@@ -117,10 +117,38 @@
 
 .communityBlockRight {
   display: flex;
+  margin-top: 4%;
+  justify-content: space-between;
+  width: 32%;
+  visibility: hidden;
+}
+
+.animate {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+  visibility: visible !important;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
 }
 
 .cardOne > img:nth-child(1) {
-  height: 250px;
-  width: 200px;
-  border: 2px solid white;
+  height: 200px;
+  width: 180px;
+  border: 10px solid rgb(243, 241, 241);
+}
+
+.cardOne > img:nth-child(2) {
+  margin-top: -223px;
+  margin-bottom: 178px;
+}
+
+.cardTwo {
+  height: 200px;
+  width: 180px;
+  padding: 2px;
+  border: 8px solid rgb(243, 241, 241);
 }
