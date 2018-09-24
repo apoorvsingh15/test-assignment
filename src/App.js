@@ -18,9 +18,19 @@ class App extends Component {
   };
 
   handleScroll = () => {
-    if (window.pageYOffset >= 405) {
+    if (window.pageYOffset >= 0 && window.pageYOffset < 750) {
+      this.setState({
+        section: 0
+      });
+    }
+    if (window.pageYOffset >= 750 && window.pageYOffset < 1852) {
       this.setState({
         section: 2
+      });
+    }
+    if (window.pageYOffset >= 1852) {
+      this.setState({
+        section: 3
       });
     }
   };
@@ -28,9 +38,14 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar />
+        <Navbar scrollEvent={this.state.section} />
         <TopSection />
         <CommunitySection scrollEvent={this.state.section} />
+        <img
+          className="mapImage"
+          src={require("./assets/snazzy-image.png")}
+          alt="map"
+        />
       </Fragment>
     );
   }
