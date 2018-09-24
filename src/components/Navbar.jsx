@@ -41,6 +41,7 @@ export default class Navbar extends Component {
           <p>06</p>
           <hr />
         </div>
+        <div className="rightFixed">REQUEST INFO</div>
       </Fragment>
     );
   }
