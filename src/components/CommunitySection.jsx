@@ -40,7 +40,7 @@ const CommunitySection = props => {
           </div>
         </div>
       </div>
-      <div className="communityFlexWrapper bottomWrapper">
+      <div className="communityFlexWrapper bottomWrapperCom">
         <div
           className={
             props.scrollEvent === 2
@@ -80,7 +80,7 @@ const CommunitySection = props => {
           </p>
         </div>
       </div>
-      <div className="communityFlexWrapper bottomWrapper">
+      <div className="communityFlexWrapper bottomWrapperCom">
         <div
           className={
             props.scrollEvent === 2

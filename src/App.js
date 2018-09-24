@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Navbar from "./components/Navbar";
 import TopSection from "./components/TopSection";
 import CommunitySection from "./components/CommunitySection";
+import FooterComponent from "./components/FooterComponent";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -46,6 +47,7 @@ class App extends Component {
           src={require("./assets/snazzy-image.png")}
           alt="map"
         />
+        <FooterComponent />
       </Fragment>
     );
   }
