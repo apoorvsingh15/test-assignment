@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import TopSection from "./components/TopSection";
 import CommunitySection from "./components/CommunitySection";
 import FooterComponent from "./components/FooterComponent";
+import Parallax from "./components/Parallax";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -29,9 +30,14 @@ class App extends Component {
         section: 2
       });
     }
-    if (window.pageYOffset >= 1852) {
+    if (window.pageYOffset >= 1852 && window.pageYOffset < 2533) {
       this.setState({
         section: 3
+      });
+    }
+    if (window.pageYOffset >= 2533) {
+      this.setState({
+        section: 4
       });
     }
   };
@@ -47,6 +53,7 @@ class App extends Component {
           src={require("./assets/snazzy-image.png")}
           alt="map"
         />
+        <Parallax />
         <FooterComponent />
       </Fragment>
     );

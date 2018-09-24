@@ -10,6 +10,10 @@ export default class Navbar extends Component {
   scrollToMap = () => {
     window.scrollTo(0, 1852);
   };
+
+  scrollToParallax = () => {
+    window.scrollTo(0, 2533);
+  };
   render() {
     const { scrollEvent } = this.props;
     return (
@@ -34,8 +38,8 @@ export default class Navbar extends Component {
           <hr className={scrollEvent === 2 ? "wideLine" : "simpleLine"} />
           <p onClick={this.scrollToMap}>03</p>
           <hr className={scrollEvent === 3 ? "wideLine" : "simpleLine"} />
-          <p>04</p>
-          <hr />
+          <p onClick={this.scrollToParallax}>04</p>
+          <hr className={scrollEvent === 4 ? "wideLine" : "simpleLine"} />
           <p>05</p>
           <hr />
           <p>06</p>

@@ -329,3 +329,51 @@ html {
   margin-top: 350px;
   cursor: pointer;
 }
+
+.menu > h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.menu > hr {
+  width: 200px;
+  margin-top: -73px;
+  border: 3px solid #ffdac8;
+}
+
+.menu > div {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu > div > button {
+  border: 0;
+  background: #ffdac8;
+  padding: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.menu > div > button:focus {
+  outline: none;
+}
+
+.parallaxFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  width: 150px;
+}
+
+.starters {
+  border-right: 1px solid rgb(228, 225, 225);
+  padding-right: 40px;
+}
+
+.mainCourses {
+  border-right: 1px solid rgb(228, 225, 225);
+  padding-right: 40px;
+  padding-top: 80px;
+}
