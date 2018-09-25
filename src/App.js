@@ -35,9 +35,14 @@ class App extends Component {
         section: 3
       });
     }
-    if (window.pageYOffset >= 2533) {
+    if (window.pageYOffset >= 2533 && window.pageYOffset < 3218) {
       this.setState({
         section: 4
+      });
+    }
+    if (window.pageYOffset >= 3218) {
+      this.setState({
+        section: 5
       });
     }
   };
@@ -54,6 +59,7 @@ class App extends Component {
           alt="map"
         />
         <Parallax scrollEvent={this.state.section} />
+
         <FooterComponent />
       </Fragment>
     );
