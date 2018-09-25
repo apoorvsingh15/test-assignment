@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
-const Parallax = () => {
+const Parallax = props => {
+  const { scrollEvent } = props;
   return (
     <Fragment>
       <div className="menu">
@@ -11,7 +12,7 @@ const Parallax = () => {
         </div>
       </div>
       <div className="parallaxFlex">
-        <div className="starters">
+        <div className={scrollEvent === 4 ? "starters animate" : "starters"}>
           <h1>STARTERS</h1>
           <div className="content">
             <h5>QUINOA CROQUETIAS</h5>
@@ -19,22 +20,26 @@ const Parallax = () => {
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
           </div>
         </div>
-        <div className="mainCourses">
+        <div
+          className={
+            scrollEvent === 4 ? "mainCourses animateReverse" : "mainCourses"
+          }
+        >
           <h1>MAIN COURSES</h1>
           <div className="content">
             <h5>QUINOA CROQUETIAS</h5>
@@ -42,22 +47,22 @@ const Parallax = () => {
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
           </div>
         </div>
-        <div className="sides">
+        <div className={scrollEvent === 4 ? "sides animate" : "sides"}>
           <h1>SIDES</h1>
           <div className="content">
             <h5>QUINOA CROQUETIAS</h5>
@@ -65,22 +70,18 @@ const Parallax = () => {
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
-            <h5>QUINOA CROQUETIAS</h5>
-            <p>
-              Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
-              (v)
-            </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
           </div>
         </div>
-        <div className="deserts">
+        <div
+          className={scrollEvent === 4 ? "starters animateReverse" : "starters"}
+        >
           <h1>DESSERTS</h1>
           <div className="content">
             <h5>QUINOA CROQUETIAS</h5>
@@ -88,19 +89,19 @@ const Parallax = () => {
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
             <h5>QUINOA CROQUETIAS</h5>
             <p>
               Quinoa and cheddar croquettas with aji rocotto & pineapple salsa
               (v)
             </p>
-            <button>$4.95</button>
+            <button className="btn-parallax">$4.95</button>
           </div>
         </div>
       </div>

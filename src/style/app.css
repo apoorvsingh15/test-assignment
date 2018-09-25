@@ -128,7 +128,14 @@ html {
 }
 
 .animate {
-  transform: translateY(150px);
+  transform: translateY(500px);
+  animation: come-in 0.8s ease forwards;
+  visibility: visible !important;
+}
+
+.animateReverse {
+  transform: translateY(-500px);
+  z-index: -1;
   animation: come-in 0.8s ease forwards;
   visibility: visible !important;
 }
@@ -370,10 +377,28 @@ html {
 .starters {
   border-right: 1px solid rgb(228, 225, 225);
   padding-right: 40px;
+  visibility: hidden;
 }
 
 .mainCourses {
   border-right: 1px solid rgb(228, 225, 225);
   padding-right: 40px;
   padding-top: 80px;
+  visibility: hidden;
+}
+
+.sides {
+  border-right: 1px solid rgb(228, 225, 225);
+  padding-right: 40px;
+  padding-top: 60px;
+  visibility: hidden;
+}
+
+.btn-parallax {
+  border: 2px solid #ffdac8;
+  cursor: pointer;
+}
+
+.btn-parallax:focus {
+  outline: none;
 }

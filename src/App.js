@@ -53,7 +53,7 @@ class App extends Component {
           src={require("./assets/snazzy-image.png")}
           alt="map"
         />
-        <Parallax />
+        <Parallax scrollEvent={this.state.section} />
         <FooterComponent />
       </Fragment>
     );
